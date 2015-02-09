@@ -1,0 +1,28 @@
+{
+  "name": "npm-slack",
+  "version": "0.1.0",
+  "description": "A slack bot that publishes messages when npm packages are published.",
+  "author": "Spencer Rinehart <anubis@overthemonkey.co>",
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "https://raw.github.com/nubs/npm-slack/master/LICENSE"
+    }
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/nubs/npm-slack.git"
+  },
+  "dependencies": {
+    "assert-dotenv": "~2.0",
+    "lodash": "~2.4",
+    "npm-publish-stream": "~1.0",
+    "slack-node": "~0.0.95"
+  },
+  "devDependencies": {
+    "eslint": "0.8.x"
+  },
+  "scripts": {
+    "test": "eslint server.js"
+  }
+}
