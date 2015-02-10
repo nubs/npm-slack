@@ -1,0 +1,6 @@
+service:
+  build: .
+  environment:
+    NPM_PACKAGES:
+    SLACK_CHANNEL:
+    SLACK_WEBHOOK_URL:
