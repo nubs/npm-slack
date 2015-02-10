@@ -1,0 +1,18 @@
+{
+  "name": "npm-slack",
+  "description": "A slack bot that publishes messages when npm packages are published.",
+  "repository": "https://github.com/nubs/npm-slack",
+  "keywords": ["npm", "slack"],
+  "env": {
+    "NPM_PACKAGES": {
+      "description": "A comma-delimited list of packages to monitor."
+    },
+    "SLACK_CHANNEL": {
+      "description": "The slack channel to publish to.",
+      "value": "@slackbot"
+    },
+    "SLACK_WEBHOOK_URL": {
+      "description": "The webhook url to publish to."
+    }
+  }
+}
