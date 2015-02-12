@@ -13,6 +13,7 @@
     "type": "git",
     "url": "git://github.com/nubs/npm-slack.git"
   },
+  "main": "src/npm-slack.js",
   "dependencies": {
     "assert-dotenv": "~2.0",
     "lodash": "~2.4",
