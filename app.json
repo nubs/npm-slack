@@ -13,6 +13,10 @@
     },
     "SLACK_WEBHOOK_URL": {
       "description": "The webhook url to publish to."
+    },
+    "START_TIME": {
+      "description": "The time to start looking for npm packages.  For example, \"5 hours ago\".",
+      "required": false
     }
   }
 }

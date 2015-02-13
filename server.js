@@ -4,11 +4,16 @@ require('assert-dotenv')({}, function() {
   var Slack = require('slack-node');
   var Npm = require('npm-publish-stream');
   var NpmSlack = require('./src/npm-slack');
+  require('datejs');
 
   var slack = new Slack();
   slack.setWebHook(process.env.SLACK_WEBHOOK_URL);
 
-  var npm = new Npm({startTime: new Date()});
+  var startTime = process.env.START_TIME ?
+    Date.parse(process.env.START_TIME) :
+    new Date();
+
+  var npm = new Npm({startTime: startTime});
 
   var npmSlack = new NpmSlack({
     npm: npm,
