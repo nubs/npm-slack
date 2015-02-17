@@ -17,6 +17,10 @@
     "START_TIME": {
       "description": "The time to start looking for npm packages.  For example, \"5 hours ago\".",
       "required": false
+    },
+    "REFRESH_RATE": {
+      "description": "The amount of time to wait between polls of NPM.",
+      "required": false
     }
   }
 }

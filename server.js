@@ -12,8 +12,9 @@ require('assert-dotenv')({}, function() {
   var startTime = process.env.START_TIME ?
     Date.parse(process.env.START_TIME) :
     new Date();
+  var refreshRate = process.env.REFRESH_RATE || 30000;
 
-  var npm = new Npm({startTime: startTime});
+  var npm = new Npm({startTime: startTime, refreshRate: refreshRate});
 
   var npmSlack = new NpmSlack({
     npm: npm,
