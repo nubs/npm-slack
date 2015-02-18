@@ -20,6 +20,6 @@ require('assert-dotenv')({}, function() {
     npm: npm,
     slack: slack,
     npmPackages: process.env.NPM_PACKAGES.split(','),
-    slackChannel: process.env.SLACK_CHANNEL
+    slackParams: {channel: process.env.SLACK_CHANNEL}
   });
 });

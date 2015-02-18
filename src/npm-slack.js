@@ -7,7 +7,7 @@
     this._npm = opts.npm;
     this._slack = opts.slack;
     this._npmPackages = opts.npmPackages;
-    this._slackChannel = opts.slackChannel;
+    this._slackParams = opts.slackParams;
 
     this._addNpmHandlers();
   };
@@ -33,7 +33,7 @@
     console.log(text);
 
     this._slack.webhook(
-      {channel: this._slackChannel, text: text},
+      _.extend({}, this._slackParams, {text: text}),
       this._handleSlackResponse.bind(this)
     );
   };
