@@ -41,8 +41,6 @@
   NpmSlack.prototype._handleSlackResponse = function(error, response) {
     if (error !== null) {
       console.error('-- ' + error);
-    } else {
-      console.log('-- ' + response.statusCode);
     }
   };
 
