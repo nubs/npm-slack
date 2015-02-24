@@ -3,11 +3,20 @@
 
   var _ = require('lodash');
 
+  function format(pkg) {
+    var name = pkg.id;
+    var version = pkg.doc['dist-tags'].latest;
+    var link = 'https://www.npmjs.org/package/' + name;
+
+    return 'Package <' + link + '|' + name + '@' + version + '> published';
+  };
+
   var NpmSlack = function(opts) {
     this._npm = opts.npm;
     this._slack = opts.slack;
     this._npmPackages = opts.npmPackages;
     this._slackParams = opts.slackParams;
+    this._format = opts.format || format;
 
     this._addNpmHandlers();
   };
@@ -23,13 +32,6 @@
     }
 
     this._sendToSlack(this._format(pkg));
-  };
-
-  NpmSlack.prototype._format = function(pkg) {
-    var name = pkg.id;
-    var version = pkg.doc['dist-tags'].latest;
-    var link = 'https://www.npmjs.org/package/' + name;
-    return 'Package <' + link + '|' + name + '@' + version + '> published';
   };
 
   NpmSlack.prototype._sendToSlack = function(text) {
