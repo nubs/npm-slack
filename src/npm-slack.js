@@ -18,15 +18,18 @@
   };
 
   NpmSlack.prototype._handleNpmPackage = function(pkg) {
-    var name = pkg.id;
-    if (!_.contains(this._npmPackages, name)) {
+    if (!_.contains(this._npmPackages, pkg.id)) {
       return;
     }
 
+    this._sendToSlack(this._format(pkg));
+  };
+
+  NpmSlack.prototype._format = function(pkg) {
+    var name = pkg.id;
     var version = pkg.doc['dist-tags'].latest;
     var link = 'https://www.npmjs.org/package/' + name;
-    var text = 'Package <' + link + '|' + name + '@' + version + '> published';
-    this._sendToSlack(text);
+    return 'Package <' + link + '|' + name + '@' + version + '> published';
   };
 
   NpmSlack.prototype._sendToSlack = function(text) {
