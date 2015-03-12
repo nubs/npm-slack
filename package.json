@@ -2,7 +2,7 @@
   "name": "npm-slack",
   "version": "0.1.0",
   "description": "A slack bot that publishes messages when npm packages are published.",
-  "author": "Spencer Rinehart <anubis@overthemonkey.co>",
+  "author": "Spencer Rinehart <anubis@overthemonkey.com>",
   "licenses": [
     {
       "type": "MIT",
