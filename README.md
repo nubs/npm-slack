@@ -1,6 +1,10 @@
 # npm-slack
 A slack bot that publishes messages when npm packages are published.
 
+[![Latest Stable Version](http://img.shields.io/npm/v/npm-slack.svg?style=flat)](https://www.npmjs.org/package/npm-slack)
+[![Total Downloads](http://img.shields.io/npm/dm/npm-slack.svg?style=flat)](https://www.npmjs.org/package/npm-slack)
+[![License](http://img.shields.io/npm/l/npm-slack.svg?style=flat)](https://www.npmjs.org/package/npm-slack)
+
 ## CLI Usage
 The `server.js` script can be run from node.js, but requires three parameters
 given by environment variables.
