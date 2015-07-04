@@ -16,13 +16,13 @@
   "main": "src/npm-slack.js",
   "dependencies": {
     "assert-dotenv": "~2.0",
-    "lodash": "~3.6",
+    "lodash": "~3.10",
     "npm-publish-stream": "~1.0",
     "slack-node": "~0.0.95",
     "datejs": "~1.0.0-rc3"
   },
   "devDependencies": {
-    "eslint": "~0.18.0"
+    "eslint": "~0.24.0"
   },
   "scripts": {
     "test": "eslint server.js"
