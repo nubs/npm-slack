@@ -18,3 +18,7 @@ For example:
 ```bash
 NPM_PACKAGES=express,koa SLACK_CHANNEL='#general' SLACK_WEBHOOK_URL='...' node server.js
 ```
+
+## License
+npm-slack is licensed under the MIT license.  See [LICENSE](LICENSE) for the
+full license text.
