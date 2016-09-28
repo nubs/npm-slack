@@ -3,12 +3,7 @@
   "version": "0.1.0",
   "description": "A slack bot that publishes messages when npm packages are published.",
   "author": "Spencer Rinehart <anubis@overthemonkey.com>",
-  "licenses": [
-    {
-      "type": "MIT",
-      "url": "https://raw.github.com/nubs/npm-slack/master/LICENSE"
-    }
-  ],
+  "license": "MIT",
   "repository": {
     "type": "git",
     "url": "git://github.com/nubs/npm-slack.git"
