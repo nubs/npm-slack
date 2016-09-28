@@ -12,6 +12,8 @@ given by environment variables.
 * `SLACK_CHANNEL` is the destination channel to report to. (e.g., `#foo`)
 * `SLACK_WEBHOOK_URL` is the slack-provided incoming webhook url. (create at
   https://slack.com/services/new/incoming-webhook)
+* `START_TIME` is a `Date.parse()`-able time for when to look for updated
+  packages.  It defaults to the current time.
 
 For example:
 
