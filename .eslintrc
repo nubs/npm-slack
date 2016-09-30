@@ -1,8 +1,10 @@
 {
+  "extends": "eslint:recommended",
   "env": {
     "node": true
   },
   "rules": {
+    "array-bracket-spacing": 2,
     "brace-style": [1, "1tbs"],
     "curly": [0, "multi"],
     "eqeqeq": [1, "smart"],
@@ -21,11 +23,11 @@
     "no-new-object": 0,
     "no-new-func": 0,
     "no-underscore-dangle": 0,
-    "quotes": [2, "avoid-escape"],
+    "object-curly-spacing": 2,
+    "quotes": [2, "double", "avoid-escape"],
     "radix": 2,
-    "space-after-keywords": [2, "always"],
-    "space-in-brackets": [2, "never"],
-    "space-unary-word-ops": 2,
+    "keyword-spacing": 2,
+    "space-unary-ops": 2,
     "strict": 0,
     "wrap-iife": 2
   }
