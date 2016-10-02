@@ -17,7 +17,7 @@
     "datejs": "~1.0.0-rc3"
   },
   "devDependencies": {
-    "eslint": "~3.6.1"
+    "eslint": "~3.7.0"
   },
   "scripts": {
     "test": "eslint server.js src"
