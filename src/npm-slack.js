@@ -27,7 +27,7 @@ NpmSlack.prototype._addNpmHandlers = function() {
 };
 
 NpmSlack.prototype._handleNpmPackage = function(pkg) {
-  if (!_.contains(this._npmPackages, pkg.id)) {
+  if (!_.includes(this._npmPackages, pkg.id)) {
     return;
   }
 
