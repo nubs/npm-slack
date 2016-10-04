@@ -7,7 +7,7 @@ require("assert-dotenv")({}, function() {
   require("datejs");
 
   var slack = new Slack();
-  slack.setWebHook(process.env.SLACK_WEBHOOK_URL);
+  slack.setWebhook(process.env.SLACK_WEBHOOK_URL);
 
   var startTime = process.env.START_TIME ?
     Date.parse(process.env.START_TIME) :
