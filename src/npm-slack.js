@@ -1,16 +1,16 @@
 "use strict";
 
-var _ = require("lodash");
+const _ = require("lodash");
 
 function format(pkg) {
-  var name = pkg.id;
-  var version = pkg.doc["dist-tags"].latest;
-  var link = "https://www.npmjs.org/package/" + name;
+  const name = pkg.id;
+  const version = pkg.doc["dist-tags"].latest;
+  const link = "https://www.npmjs.org/package/" + name;
 
   return "Package <" + link + "|" + name + "@" + version + "> published";
 }
 
-var NpmSlack = function(opts) {
+const NpmSlack = function(opts) {
   this._npm = opts.npm;
   this._slack = opts.slack;
   this._npmPackages = opts.npmPackages;
