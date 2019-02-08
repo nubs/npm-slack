@@ -10,14 +10,14 @@
   },
   "main": "src/npm-slack.js",
   "dependencies": {
-    "assert-dotenv": "~2.0",
-    "lodash": "~4.16",
-    "npm-publish-stream": "~1.0",
-    "slack-node": "~0.1.8",
-    "datejs": "~1.0.0-rc3"
+    "assert-dotenv": "^2.0",
+    "lodash": "^4.17",
+    "npm-publish-stream": "^1.0",
+    "slack-node": "^0.1.8",
+    "datejs": "^1.0.0-rc3"
   },
   "devDependencies": {
-    "eslint": "~3.8.0"
+    "eslint": "^3.8.0"
   },
   "scripts": {
     "test": "eslint server.js src"
